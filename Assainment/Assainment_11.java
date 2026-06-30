@@ -5,17 +5,20 @@ public class Assainment_11 {
     
     public static void main(String[] args) {
 
-        int i ,n, m, sum = 0;
+        int start, end, sum = 0;
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter Any First Number: ");
-        i = input.nextInt();
+        System.out.println("Enter Any starting Number: ");
+        start = input.nextInt();
 
         System.out.println("Enter Any Ending Number: ");
-        m = input.nextInt();
+        end = input.nextInt();
 
-        for(n=i;n<=m;n=n+2)
+        if (start % 2 == 0) {
+            start++;
+        }
+        for (int i = start; i <= end; i=i+2)
         {
-            sum = sum + n;
+            sum = sum + i;
         }
         System.out.println("Sum to: "+sum);
 
