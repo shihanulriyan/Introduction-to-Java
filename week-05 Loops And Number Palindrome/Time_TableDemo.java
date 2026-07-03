@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Time_TableDemo{
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int num;
+        System.out.print("Enter any number: ");
+
+        num = input.nextInt();
+        for(int i=1;i<=num;i++)
+        {
+            System.out.println(num+" X " +i+" = "+num*i);
+        }
+    }
+}
